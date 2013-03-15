@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false" >
+
+    <RadioGroup
+        android:id="@+id/opcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="84dp"
+        android:onClick="" >
+
+        <RadioButton
+            android:id="@+id/op1"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/op2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/op3"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/op4"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pergunta"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/opcoes"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/opcoes"
+        android:layout_marginTop="44dp"
+        android:text="TextView" />
+    
+    <TextView
+        android:id="@+id/acerto"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/opcoes"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/opcoes"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/erro"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/opcoes"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/opcoes"
+        android:layout_marginTop="44dp"
+        android:text="TextView"
+        android:visibility="invisible" />
+    
+</RelativeLayout>
